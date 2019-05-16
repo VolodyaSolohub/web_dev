@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+  </head>
+  <body>
+    <a href="index.html" target="_parent">Home</a><br>
+    <h3>GET form</h3>
+    <form action="FormFiles/GET.php" method="get">
+      Name:<input type="text" name="name"><br>
+      Email:<input type="text" name="email"><br>
+      <input type="submit" value="Send">
+    </form><br>
+    <h3>POST form</h3>
+    <form action="FormFiles/POST.php" method="post">
+      Firstname:<input type="text" name="Firstname"><br>
+      Secondname:<input type="text" name="Secondname"><br>
+      Number of phone:<input type="text" name="Numberofphone"><br>
+      <input type="submit" value="Send">
+    </form>
+    <h3>Upload your files</h3>
+    <form  action="FormFiles/upload.php" method="post" enctype="multipart/form-data">
+      Select img to upload:
+      <input type="file" name="img" id="img">
+      <input type="submit" name="submit" value="Upload image">
+    </form>
+  </body>
+</html>
